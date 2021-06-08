@@ -1,0 +1,26 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\newcommand{\abs}[1]{\ensuremath{\mid #1\mid}}
+\title{Notes : Calculus and Probability Theory 2021}
+\author{Jan Hendron}
+
+\newtheorem{definition}{Definition}
+
+\begin{document}
+\maketitle
+
+\section*{Week 1: Intro to Calculus, and Limits}
+\subsection*{Formal Defintion of a Limit}
+\begin{definition}
+Let $f : D \mapsto \mathbb{R}$  be a function
+
+$f$ has a limit $b$ when approaching $a$ if
+
+\begin{gather}
+\forall \epsilon > 0 , \exists \delta > 0 \textrm{ such that } \forall x \in D \\
+  \textrm{if } 0 <  \abs{x - a} < \delta \textrm{ implies that } \abs{f(x) - b} < \epsilon
+\end{gather}
+\end{definition}
+\end{document}

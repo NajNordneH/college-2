@@ -1,0 +1,185 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdftex 2021.3.10)  7 APR 2021 22:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**notes.tex
+(./notes.tex
+! Undefined control sequence.
+l.3 \documentclass
+                  [11pt]{article}
+? 
+! Undefined control sequence.
+l.4 \usepackage
+               [utf8]{inputenc}
+? 
+! Undefined control sequence.
+l.5 \usepackage
+               [T1]{fontenc}
+? 
+! Undefined control sequence.
+l.6 \usepackage
+               {graphicx}
+? 
+! Undefined control sequence.
+l.7 \usepackage
+               {grffile}
+? 
+! Undefined control sequence.
+l.8 \usepackage
+               {longtable}
+? 
+! Undefined control sequence.
+l.9 \usepackage
+               {wrapfig}
+? 
+! Interruption.
+<to be read again> 
+                   {
+l.9 \usepackage{
+                wrapfig}
+? 
+! Undefined control sequence.
+l.10 \usepackage
+                {rotating}
+? 
+! Undefined control sequence.
+l.11 \usepackage
+                [normalem]{ulem}
+? 
+! Undefined control sequence.
+l.12 \usepackage
+                {amsmath}
+? 
+! Undefined control sequence.
+l.13 \usepackage
+                {textcomp}
+? 
+! Undefined control sequence.
+l.14 \usepackage
+                {amssymb}
+? 
+! Undefined control sequence.
+l.15 \usepackage
+                {capt-of}
+? 
+! Undefined control sequence.
+l.16 \usepackage
+                {hyperref}
+? 
+! Undefined control sequence.
+l.17 \usepackage
+                {amsthm}
+? 
+! Undefined control sequence.
+l.18 \newtheorem
+                {definition}{Definition}[section]
+? 
+! Undefined control sequence.
+l.19 \newcommand
+                {\abs}[1]{\ensuremath{\mid #1 \mid}}
+? 
+! Undefined control sequence.
+l.19 \newcommand{\abs
+                     }[1]{\ensuremath{\mid #1 \mid}}
+? 
+! Undefined control sequence.
+l.19 \newcommand{\abs}[1]{\ensuremath
+                                     {\mid #1 \mid}}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \mid 
+l.19 \newcommand{\abs}[1]{\ensuremath{\mid
+                                           #1 \mid}}
+? 
+! You can't use `macro parameter character #' in math mode.
+l.19 \newcommand{\abs}[1]{\ensuremath{\mid #
+                                            1 \mid}}
+? 
+! Extra }, or forgotten $.
+l.19 ...command{\abs}[1]{\ensuremath{\mid #1 \mid}
+                                                  }
+? 
+! Extra }, or forgotten $.
+l.19 ...ommand{\abs}[1]{\ensuremath{\mid #1 \mid}}
+                                                  
+? 
+! Undefined control sequence.
+l.20 \author
+            {Jan Hendron}
+? 
+! Undefined control sequence.
+l.21 \date
+          {\today}
+? 
+! Undefined control sequence.
+l.21 \date{\today
+                 }
+? 
+! Undefined control sequence.
+l.22 \title
+           {Notes}
+? 
+! Undefined control sequence.
+l.23 \hypersetup
+                {
+? 
+! Undefined control sequence.
+l.30 \begin
+           {document}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.31 
+     
+? 
+
+Overfull \hbox (625.37125pt too wide) in paragraph at lines 3--31
+\tenrm math textcomp amssymb capt-of hy-per-ref am-sthm def-i-ni-tion-Def-i-ni-
+tion[section] [1]$\tensy j \tenrm 1 \tensy j [][][][][]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm m
+.\tenrm a
+.\tenrm t
+.\tenrm h
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+! Undefined control sequence.
+l.32 \maketitle
+               
+? 
+! Undefined control sequence.
+l.36 \section
+             {Week 1: Limit's and Intro to Calculus}
+? 
+! Undefined control sequence.
+l.37 \label
+           {sec:org251a4c1}
+? 
+! Undefined control sequence.
+l.38 \subsection
+                {Formal definition of a limit}
+? 
+! Undefined control sequence.
+l.39 \label
+           {sec:org9af4730}
+? 
+! Undefined control sequence.
+l.40 \begin
+           {defintion}
+? 
+! Undefined control sequence.
+l.41 Let \(
+           f\) be a function on an open interval, maps from a set \(D\) to \...
+
+? 
+! Undefined control sequence.
+l.41 Let \(f\)
+               be a function on an

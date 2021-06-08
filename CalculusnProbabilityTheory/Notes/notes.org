@@ -1,0 +1,18 @@
+#+TITLE: Notes
+#+LATEX_HEADER: \usepackage{amsthm} \newtheorem{definition}{Definition}[section] \newcommand{\abs}[1]{\ensuremath{\mid #1 \mid}}
+
+
+* Week 1: Limit's and Intro to Calculus
+** Formal definition of a limit
+\begin{defintion}
+Let \(f\) be a function on an open interval, maps from a set \(D\) to \(\mathbb{R}\)
+
+This function \(f\) has a limit \(b\) if
+
+\begin{gather*}
+\forall \epsilon > 0, \exists \delta > 0 \textrm{ such that }
+\forall x \in D \\
+\textrm{if } 0 < \abs{x - a} < \delta \\
+\textrm{then } \abs{f(x) - b} < \epsilon \\
+\end{gather*}
+\end{defintion}

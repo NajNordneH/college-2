@@ -1,0 +1,72 @@
+#+TITLE: Workgroup
+#+AUTHOR: Jan
+
+* Part A: Q 1
++ When does \(f(x) = \frac{1}{2}- \frac{1}{1-(x-1)^{2}}\)
+  -
++ Say that \(f(x) = a\), where \(a > 0\)
+  -
+
+* Part A: Q2
++ \(x\) runs through interval \((\frac{1}{2},1)\), where does \(y\) run through for \(y = \frac{a}{x}\)
++ 3 cases
+  - \(a = 0\)...... Then \(y = 0\)
+  - \(a < 0\)...... If \(x = 1\), then \(y = a\), If \(x = \frac{1}{2}\), then \(y = 2a\), and since it is \(< 0\), then the interval for \(y = (2a,a)\)
+  - \(a > 0\)...... If \(x = 1\), then \(y = a\), If \(x = \frac{1}{2}\), then \(y = 2a\), and since it is \(> 0\), then the interval for \(y = (a,2a)\)
+
+* Part A: Q5
++ 5(x^2-1)
++ 5((x+1)(x-1))
+
+
+(x-1)(x^2+3x+2)
+        (x+2)(x+1)
+
+5( +(x+1)+  +(x-1)+)
+----------------------
++(x-1)+ (x+2) +(x+1)+
+
+        x^2+3x+2
+  x-1 | x^3+2x^2-x-2
+        x^3-x^2
+            3x^2-x
+            3x^2-3x
+                2x-2
+                2x-2
+
+
+
+5/(x+2)
+    5/(-1+2)
+    5
+
++ sqrt(x+5)-3    sqrt(x+5)+3
+  -----------  x -----------
+     x-4         sqrt(x+5)+3
+
+ x+5+3(sqrt(x+5))-3(sqrt(x+5))-9
+ -------------------------------
+    (x-4)(sqrt(x+5)+3)
+
+            +x-4+
+  -----------------------
+  +(x-4)+ (sqrt(x+5))+3x-12
+
+       1
+----------------
+  (sqrt(x+5)+3)
+
+
+    1
+-----------
+ sqrt(9)+3
+
+  1
+------
+  6
+
++  lim     x^2 sin(1/x)
+  x -> 0
+
+  -1 <= sin(1/x) <= 1
+  x^2 <= x^2 sin(1/x) <= x^2

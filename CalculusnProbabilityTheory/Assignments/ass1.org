@@ -1,0 +1,101 @@
+#+TITLE: Assignment 1
+#+AUTHOR: Jan Hendron(s1049777)
+#+OPTIONS: toc:nil
+#+LATEX_HEADER:
+
+* Exercise 6
+We must make some case distinctions in this question
+
+1. We assume that \(a = 0, b = 0\)
+
+   Then we just have that \(y=x\)
+
+2. We assume that \(a < 0, b = 0\)
+
+   Then we have
+   \begin{gather*}
+   y = a + (0 - a)x \\
+    y = a-ax \\
+    y = x
+   \end{gather*}
+
+   So again \(y = x\)
+
+3. We assume that \(a = 0, b < 0\)
+
+   Then we get
+   \begin{gather*}
+   y = 0 + (b - 0)x \\
+   y = bx \\
+   \end{gather*}
+
+4. We assume that \(a = 0, b > 0\)
+
+* Exercise 7
+To prove that a function is odd, we must show that \(-f(x)=f(-x)\; \forall x\in D\), and to prove that a function is even, we must show that \(f(x) = f(-x)\; \forall x \in D\)
+
+a.
+   \begin{align*}
+   \textrm{\(f(-x)\) should be equal to this if it is even}\\
+   f(x) &= 3x-x^{3} \\
+   & \\
+   \textrm{\(f(-x)\) should be equal to this if it is odd} \\
+   -f(x) &= -(3x-x^{3})\\
+   &= -3x+x^{3} \\
+   &= x^{3}-3x \\
+   &  \\
+   \textrm{Here we test if either it true} \\
+   f(-x) &= 3(-x)-(-x)^{3}   \\
+   &= -3x-(-x^3) \\
+   &= -3x+x^3 \\
+   &= x^3-3x
+   \end{align*}
+   Therefore, \(f(x) = 3x-x^{3}\) is an *odd* function
+b.
+   \begin{align*}
+   \textrm{\(f(-x)\) should be equal to this if it is even} \\
+    f(x) &= \sqrt[3]{(1-x)^{2}} + \sqrt[3]{(1+x)^2} \\
+    \textrm{\(f(-x)\) should be equal to this if it is odd} \\
+    -f(x) &= -\left(\sqrt[3]{(1-x)^2} + \sqrt[3]{(1+x)^2}\right)\\
+    &= - \sqrt[3]{(1-x)^2} - \sqrt[3]{(1+x)^2}\\
+    \textrm{Here we test if either are true}\\
+    f(-x) &= \sqrt[3]{(1-(-x))^{2}} + \sqrt[3]{(1+(-x))^2} \\
+    &= \sqrt[3]{(1+x)^{2}} + \sqrt[3]{(1-x)^2} \\
+    &\textrm{Rearrange} \\
+    &= \sqrt[3]{(1-x)^{2}} + \sqrt[3]{(1+x)^2} \\
+   \end{align*}
+   Therefore, \(f(x) = \sqrt[3]{(1-x)^{2}} + \sqrt[3]{(1+x)^2} \) is an *even* function
+* Exercise 8
+* Exercise 9
+1. In order to compute the inverse of a function \(f^{-1}(x)\), you have to express the function in terms of \(x\), and then change the variables, so from the function \(y = \frac{ax+b}{cx+d}\)
+
+         \begin{gather*}
+         y = \frac{ax+b}{cx+d} \\
+         y(cx+d) = ax+b \\
+         cxy + dy = ax+b \\
+         cxy - ax =b-dy \\
+         x(cy-a) = b-dy \\
+         x = \frac{b-dy}{cy-a}\\
+         y = \frac{b-dx}{cx-a}
+         \end{gather*}
+
+2.
+* Exercise 10
+a)
+\begin{gather*}
+\lim_{x\to2} \frac{x-2}{x^{2}+x-6} \\
+\end{gather*}
+This will be done using the *simplify* method
+Factorize the denominator
+\begin{gather*}
+\frac{x-2}{(x-2)(x+3)}
+\end{gather*}
+Cancel the \((x-2)\) on both sides of the fraction
+\begin{gather*}
+\frac{1}{x+3} \\
+\frac{1}{2+3} \\
+\lim_{x\to2} \frac{x-2}{x^{2}+x-6} = \frac{1}{5} \\
+\end{gather*}
+b)
+c)
+d)

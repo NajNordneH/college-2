@@ -1,0 +1,205 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\title{Calculus Assignment 2}
+\author{Jan Hendron:s1049777}
+
+\begin{document}
+
+\maketitle
+
+\section*{Exercise 7}
+
+When trying to find the limit towards \(\infty\) of a rational function, we first have to divide both sides of the fraction by the highest degree of $x$.
+For this function, it is $x^{3}$, so the new function we get after this is
+\[
+\frac{1+\frac{2}{x}+\frac{2}{x^{3}}}{3+\frac{1}{x^{2}}+\frac{4}{x^{3}}}
+\]
+
+Now, we substitute all $x$'s for 0, and we get $\frac{1}{3}$, which means that
+
+\[
+\lim_{x \rightarrow - \infty}\frac{x^{3}+2x^{2}+2}{3x^{3}+x+4} = \frac{1}{3}
+\]
+
+\section*{Exercise 8}
+
+The function is : $f(x) = 2x+3$
+
+\begin{gather*}
+  \frac{2(x+h)+3-2x-3}{h} \\
+  \\
+  \frac{2x+2h+3-2x-3}{h} \\
+  \\
+  \frac{2h}{h} \\
+\end{gather*}
+Cancel the $h$ on both sides
+\begin{gather*}
+  \lim_{h\rightarrow 0} = 2
+\end{gather*}
+
+\section*{Exercise 9}
+\begin{enumerate}
+  \item[a)]
+        In order to find the tangent line of a function at any point, we must first find the derivative
+        This function is a fraction, but because there is a 1 as the numerator, we can re-write it as $(1+x^{-1})^{-1}$, as $\frac{1}{x} = x^{-1}$
+
+        Now, we can use the chain rule to solve this
+
+
+\begin{gather*}
+  -(1+x^{-1})^{-2} \cdot -x^{-2} \\
+  \\
+  -\left(\frac{1}{(1+\frac{1}{x})^{2}}\right) \cdot -\frac{1}{x^{2}}\\
+  \\
+  -\frac{1}{\frac{1}{x^{2}}+\frac{2}{x}+1} \cdot  - \frac{1}{x^{2}} \\
+  \\
+  \frac{1}{x^{2}(\frac{1}{x^{2}}+\frac{2}{x}+1)} \\
+  \\
+  f'(x) = \frac{1}{x^{2}+2x+1}
+\end{gather*}
+        Now that we have found the derivative, we can plug in the value of $x = 2$ to find the slope of the tangent line at that point
+        \[
+            \frac{1}{(2)^{2}+2(2)+1} = \frac{1}{9}
+        \]
+
+        The slope of $f(x) = \frac{1}{1+\frac{1}{x}}$ at $x = 2$ is $\frac{1}{9}$
+
+        Now that we have the slope, we can use a formula to find the equation of the tangent line, but first we need a $y$ value for when $x = 2$
+
+
+\begin{gather*}
+\frac{1}{1+\frac{1}{2}} = \frac{1}{\frac{3}{2}} = \frac{2}{3}
+\end{gather*}
+
+        We have a point $2,\frac{2}{3}$, so we can find the line
+
+\begin{gather*}
+  y = mx+c \\
+  \left(\frac{2}{3}\right) = \left(\frac{1}{9}\right) \cdot \left( 2 \right) + c \\
+  \frac{2}{3} = \frac{2}{9} + c \\
+  c = \frac{2}{3} - \frac{2}{9} \\
+  c = \frac{4}{9} \\
+\end{gather*}
+        From this, we can get that the equation of the line is $y = \frac{x}{9} + \frac{4}{9}$ or $9y = x+4$
+
+  \item[b)]
+        We have already found the equation for the tangent line of this function which is $\frac{1}{x^{2}+2x+1}$, so to find the limit going to \(\infty\), we see based on the highest degree of the polynomial, what is that limit
+        Since the highest degree is $x^{2}$, and $\lim\limits_{x \rightarrow \infty} \frac{1}{x^{2}} = 0$, therefore we can see that
+        \[
+          \lim\limits_{x \rightarrow \infty} \frac{1}{x^{2}+2x+1} = 0
+        \]
+
+\end{enumerate}
+\section*{Exercise 10}
+\begin{enumerate}
+  \item[a)]
+        I will use the \textbf{Chain rule} for this problem
+
+
+\begin{gather*}
+  \frac{1}{\cos^{2}(\cos(x))} \cdot -\sin(x) \\
+  \\
+  - \frac{\sin(x)}{\cos^{2}(\cos (x))} \\
+\end{gather*}
+
+        \[
+          f'(x) = - \frac{\sin(x)}{\cos^{2}(\cos(x))}
+        \]
+
+  \item[b)]
+        I will use the chain rule to find the first derivative of this function
+
+        \[g'(x) = - \sin(3x) * 3 = -3\sin(3x)  \]
+
+        Now, I will find the first 8 derivatives to try and see a pattern
+
+\begin{align*}
+  g^{2}(x) &= -3\cos(3x) \cdot 3 = -9\cos(3x) \\
+  g^{3}(x) &= 9\sin(3x) \cdot 3 = 27\sin(3x) \\
+  g^{4}(x) &= 27\cos(3x) \cdot 3 = 81\cos(3x) \\
+  g^{5}(x) &= -81\sin(3x) \cdot 3 = -243\sin(3x) \\
+  g^{6}(x) &= -243\cos(3x) \cdot 3 = -729\cos(3x) \\
+  g^{7}(x) &= 729\sin(3x) \cdot 3 = 2187\sin(3x) \\
+  g^{8}(x) &= 2186\cos(3x) \cdot 3 = 6461\cos(3x)
+\end{align*}
+        Now, we can see that the pattern is that the coefficient is always $3^{d}$, where $d$ is which derivative it is, and if $d \equiv 0 \pmod{4}$, than the trigonometric function is $\cos(3x)$,
+        if $d \equiv 1 \pmod{4}$, then the triginometric function is $-\sin(3x)$,
+        if $d \equiv 2 \pmod{4}$ then the triginometric function is $-\cos(3x)$,
+        and if $d \equiv 3 \pmod{4}$, then the trigonometric function is $\sin(3x)$
+
+        We need to calculate $2020 \mod{4} \equiv 0$, so therefore
+        \[
+          g^{2020}(x) = 3^{2020}\cos(3x)
+        \]
+  \item[c)]
+        This will use the chain rules, as $\sqrt{x} = x^{\\frac{1}{2}}$
+
+
+\begin{gather*}
+\frac{1}{2}\left(\sin(x^{2})+\cos(2x)\right)^{-\frac{1}{2}} \cdot \left[\sin(x^{2})+\cos(2x)\right]'
+\end{gather*}
+
+        Differentiate $\sin(x^{2})$
+\begin{gather*}
+  \cos(x^{2}) \cdot 2x \\
+  2x \cos(x^{2})
+\end{gather*}
+
+        Differentiate $\cos(2x)$
+
+\begin{gather*}
+  -\sin(2x) \cdot 2 \\
+  -2\sin(2x)
+\end{gather*}
+
+        \begin{gather*}
+-2\sin(2x) + 2x \cos(x^{2}) = 2(x\cos(x^{2})-\sin(2x))
+\end{gather*}
+        Now we can put this back into the equation for the whole derivative
+
+\begin{gather*}
+  \frac{1}{2} \cdot -\sqrt(\sin(x^{2})+\cos(2x)) \cdot 2(x\cos(x^{2})-\sin(2x)) \\
+  \frac{(x\cos(x^{2})-\sin(2x))}{\sqrt(\sin(x^{2})+\cos(2x))} \\
+\end{gather*}
+
+\end{enumerate}
+\section*{Exercise 12}
+\begin{enumerate}
+  \item[a)]
+        To make the equation easier, I will rewrite it as $(x^{2}+y^{2}-1)^{3}=x^{2}y^{3}$
+
+        Now, we can use the rules for implicit differentiation to find the equation for the slope
+
+        We differentiate both sides
+
+\begin{gather*}
+  \frac{d}{dx}(x^{2}+y^{2}-1)^{3}=\frac{d}{dx}(x^{2}y^{3}) \\
+\end{gather*}
+        We use the chain rule on the left-hand side
+
+\begin{gather*}
+  3(x^{2}+y^{2}-1)^{2} \cdot 2x+2y \frac{dy}{dx} \\
+  3(x^{4}+y^{4}+2x^{2}y^{2}-x^{2}-y^{2}+1) \cdot \frac{dy}{dx}
+\end{gather*}
+
+        I will use the product rule on the left hand side
+
+\begin{gather*}
+2x \cdot y^{3} + x^{2} \cdot 3y^{2} \frac{dy}{dx}
+\end{gather*}
+
+\end{enumerate}
+
+\end{document}

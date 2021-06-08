@@ -1,0 +1,258 @@
+% Created 2021-04-10 Sat 18:08
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\newcommand{\abs}[1]{\ensuremath{|#1| }}
+\author{Jan Hendron(s1049777)}
+\date{\today}
+\title{Assignment 1}
+\hypersetup{
+ pdfauthor={Jan Hendron(s1049777)},
+ pdftitle={Assignment 1},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)},
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section*{Exercise 6}
+\label{sec:org279db86}
+We must make some case distinctions in this question
+
+\subsubsection*{a = 0}
+When $a = 0$, $y = bx$, so the range of $y = (0,b)$ if $b > 0$, otherwise, it is $(b,0)$
+\subsubsection*{b = 0}
+When $b = 0$, $y = a - ax$, so the range of $y = (0,a)$ if $a > 0$, otherwise, it is $(a,0)$
+\subsubsection*{a and b \neq 0 }
+\begin{itemize}
+\item
+When $a > 0$ and $b = 0$, $y = a - ax$, and since $x$ is in the range of $(0,1)$, then $y$ must be in the range of $(0,a)$, as
+
+When $x = 0$
+\begin{align*}
+  y &= a-a(0) \\
+  y &= a
+\end{align*}
+
+When $x = 1$
+\begin{align*}
+  y &= a-a(1)\\
+  y &= a-a \\
+  y &= 0
+\end{align*}
+
+But since we have already said that $a > 0$, then the range of $y$ must be $(0,a)$
+ \item
+        When $a > 0$ and $b > 0$, $y = a + bx - ax$, and since $x$ is in the range of $(0,1)$, then if we substitute in values for $x$, we can see that
+
+        $x = 0$
+
+\begin{align*}
+  y &= a+b(0)-a(0) \\
+  y &= a
+\end{align*}
+
+        $x = 1$
+
+\begin{align*}
+  y &= a+b(1)-a(1) \\
+  y &= a-a+b \\
+  y &= b
+\end{align*}
+        So, if $a > b$, then the range of $y = (b,a)$, and this will also hold for when $b < 0$, and if $b > a$, then the range of $y = (b,a)$, and this will also hold for when $a < 0$
+
+        If $a = b$, then the range will be $y = (a,a) = (b,b)$, which means that the function will just be a straight line on a graph
+\end{itemize}\section*{Exercise 7}
+\label{sec:org19c2a8d}
+To prove that a function is odd, we must show that \(-f(x)=f(-x)\; \forall x\in D\), and to prove that a function is even, we must show that \(f(x) = f(-x)\; \forall x \in D\)
+
+\begin{enumerate}
+
+  \item[a)] \begin{align*}
+\textrm{\(f(-x)\) should be equal to this if it is even}\\
+f(x) &= 3x-x^{3} \\
+& \\
+\textrm{\(f(-x)\) should be equal to this if it is odd} \\
+-f(x) &= -(3x-x^{3})\\
+&= -3x+x^{3} \\
+&= x^{3}-3x \\
+&  \\
+\textrm{Here we test if either it true} \\
+f(-x) &= 3(-x)-(-x)^{3}   \\
+&= -3x-(-x^3) \\
+&= -3x+x^3 \\
+&= x^3-3x
+\end{align*}
+Therefore, \(f(x) = 3x-x^{3}\) is an \textbf{odd} function
+
+  \item[b)] \begin{align*}
+\textrm{\(f(-x)\) should be equal to this if it is even} \\
+ f(x) &= \sqrt[3]{(1-x)^{2}} + \sqrt[3]{(1+x)^2} \\
+ \textrm{\(f(-x)\) should be equal to this if it is odd} \\
+ -f(x) &= -\left(\sqrt[3]{(1-x)^2} + \sqrt[3]{(1+x)^2}\right)\\
+ &= - \sqrt[3]{(1-x)^2} - \sqrt[3]{(1+x)^2}\\
+ \textrm{Here we test if either are true}\\
+ f(-x) &= \sqrt[3]{(1-(-x))^{2}} + \sqrt[3]{(1+(-x))^2} \\
+ &= \sqrt[3]{(1+x)^{2}} + \sqrt[3]{(1-x)^2} \\
+ &\textrm{Rearrange} \\
+ &= \sqrt[3]{(1-x)^{2}} + \sqrt[3]{(1+x)^2} \\
+\end{align*}
+Therefore, \(f(x) = \sqrt[3]{(1-x)^{2}} + \sqrt[3]{(1+x)^2}\) is an \textbf{even} function
+\end{enumerate}
+\section*{Exercise 8}
+\label{sec:org33e8865}
+\begin{enumerate}
+  \item[a)]
+        The domain($D(f)$) of this function must be $\left[-\sqrt{7},\sqrt{7}\right]$, as if $x = 0$,  then the function is just $\sqrt{7}+1$, but $x$ can never be greater than $\sqrt{7}$, or less than $-\sqrt{7}$, as then we would have the square root of a negative number, which is not possible in the real plane, but $x$ can be equal to $\pm \sqrt{7}$, as $\sqrt{0} = 0$.
+
+        The range($R(f)$) of the function must be $\left[1,1+\sqrt{7}\right]$, as when $x = 0$, $y = \sqrt{7}+1$, but when $x = \pm \sqrt{7}$,  then $y = 1$
+  \item[b)]
+        The domain($D(f)$) of this function is $\mathbb{R} - {0}$, as you can never divide by 0, but apart from that any real number can be used
+
+        The range($R(f)$) of this function is $\left(0,\infty\right)$, as $\lim\limits_{x \rightarrow 0}\frac{1}{\abs{x}} = \infty$, because as $x$ gets smaller $y$ will get bigger, but since $\forall x\in D(f)\; \; x \neq 0$, it will never reach $\infty$, and  $\lim\limits_{x \rightarrow \infty}\frac{1}{\abs{x}} = 0$, and since the absolute value will ensure there is always a positive number as the denominator, therefore the function will never tend towards $-\infty$, so $R(f) = \left(0,\infty\right)$
+\end{enumerate}
+\section*{Exercise 9}
+\label{sec:org9e11fd4}
+\begin{enumerate}
+\item In order to compute the inverse of a function \(f^{-1}(x)\), you have to express the function in terms of \(x\), and then change the variables, so from the function \(y = \frac{ax+b}{cx+d}\)
+
+\begin{gather*}
+y = \frac{ax+b}{cx+d} \\
+y(cx+d) = ax+b \\
+cxy + dy = ax+b \\
+cxy - ax =b-dy \\
+x(cy-a) = b-dy \\
+x = \frac{b-dy}{cy-a}\\
+y = \frac{b-dx}{cx-a}
+\end{gather*}
+
+\item
+\end{enumerate}
+\section*{Exercise 10}
+\label{sec:org48b59b0}
+\begin{enumerate}
+\item[a)]
+\begin{gather*}
+\lim_{x\to2} \frac{x-2}{x^{2}+x-6} \\
+\end{gather*}
+This will be done using the \textbf{simplify} method
+
+Factorize the denominator
+\begin{gather*}
+\frac{x-2}{(x-2)(x+3)}
+\end{gather*}
+Cancel the \((x-2)\) on both sides of the fraction
+\begin{gather*}
+\frac{1}{x+3} \\
+\frac{1}{2+3} \\
+\lim_{x\to2} \frac{x-2}{x^{2}+x-6} = \frac{1}{5} \\
+\end{gather*}
+  \item[b)]
+        \textbf{Squeeze} theorem:
+
+        Since we have $-1 \le cos \left(\frac{1}{x}\right) \le 1 $, then we must have that $\abs{x} \le - \abs{x}cos \left(\frac{1}{x}\right) \le \abs{x}$.
+
+        Now, we know that the $\lim_{x \rightarrow 0} - \abs{x} = 0 = \lim_{x \rightarrow 0} \abs{x}$,  therefore $\lim_{x \rightarrow 0} \abs{x} cos \left(\frac{1}{x}\right) = 0$
+
+  \item[c)]
+
+        \[
+        \lim_{x\rightarrow 1}\frac{x^{2}+4x+3}{x^{2}+x-2}
+        \]
+
+        I will use the \textbf{simplify} method:
+
+\begin{gather*}
+  \frac{x^{2}+4x+3}{x^{2}+x-2} \\
+  \frac{(x-3)(x-1)}{(x+2)(x-1)} \qquad \textrm{Factorize} \\
+  \frac{x-3}{x+2} \qquad \textrm{Cancel the \((x-1)\)} \\
+  \frac{1-3}{1+3} \qquad \textrm{Substitute \(x = 1\)} \\
+  \frac{-2}{4} \\
+  - \frac{1}{2}
+\end{gather*}
+
+
+        \[
+        \lim_{x\rightarrow 1}\frac{x^{2}+4x+3}{x^{2}+x-2} = - \frac{1}{2}
+        \]
+  \item[d)]
+        \[
+  \lim_{x \rightarrow 0} \frac{\sqrt{x^{2}+x+1}-\sqrt{x^{2}+1}}{x}
+        \]
+
+        I will use the \textbf{rationalize} method here:
+
+
+\begin{gather*}
+  \\
+  \frac{\sqrt{x^{2}+x+1}-\sqrt{x^{2}+1}}{x} \times \frac{{\sqrt{x^{2}+x+1}+\sqrt{x^{2}+1}}}{\sqrt{x^{2}+x+1}+\sqrt{x^{2}+1}} \\
+  \\
+  \frac{x^{2}+x+1-x^{2}-1}{x\left(\sqrt{x^{2}+x+1}+\sqrt{x^{2}+1}\right)} \\
+  \\
+  \frac{x}{x\left(\sqrt{x^{2}+x+1}+\sqrt{x^{2}+1}\right)} \\
+  \\
+  \frac{1}{\left(\sqrt{x^{2}+x+1}+\sqrt{x^{2}+1}\right)}
+\end{gather*}
+        Substitute \(x = 0\)
+\begin{gather*}
+  \frac{1}{\sqrt{0^{2}+0+1}+\sqrt{0^{2}+1}} \\
+  \\
+  \frac{1}{\sqrt{1}+\sqrt{1}} \\
+  \\
+  \frac{1}{1+1}\\
+  \\
+  \frac{1}{2} \\
+\end{gather*}
+        So,
+        \[
+  \lim_{x \rightarrow 0} \frac{\sqrt{x^{2}+x+1}-\sqrt{x^{2}+1}}{x} = \frac{1}{2}
+        \]
+\end{enumerate}
+\section*{Exercise 11}
+First, we should find what $f^{-1}(x)$ is
+\begin{align*}
+  y &= \frac{x}{2x+3} \\
+  y(2x+3) &= x \\
+  2xy +3y &= x \\
+  3y &= x-2xy \\
+  3y &= x(1-2y) \\
+  \frac{3y}{1-2y} = x \\
+  f^{-1}(x) = \frac{3x}{1-2x}
+\end{align*}
+So, to find $a$ and $b$,  we must find a line that connects the points $(-2,-\frac{6}{5})$, as this is the last point on the left that $g(x) = f^{-1}(x)$, and $(3,-\frac{9}{5})$.
+
+First, we must find the slope of the line
+\begin{align*}
+\frac{dy}{dx} &= \frac{-\frac{6}{5}+\frac{9}{5}}{-2-3} \\
+              &= \frac{\frac{3}{5}}{-5} \\
+  &= - \frac{3}{25}
+\end{align*}
+
+Because the equation of the line was give as $ax+b$, we know now that $a = -\frac{3}{25}$, so we can solve for $b$
+\begin{gather*}
+  -\frac{3}{25} \cdot (-2) + b = -\frac{6}{5} \\
+  \frac{6}{25}+b = -\frac{6}{5} \\
+  b= -\frac{6}{5} - \frac{6}{25} \\
+  b = -\frac{36}{25} \\
+\end{gather*}
+
+So, we can now see that
+\[
+  \frac{b}{a} = \frac{-36}{-3} = 12
+\]
+
+\end{document}

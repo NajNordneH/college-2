@@ -1,0 +1,60 @@
+% Created 2021-04-07 Wed 20:04
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\newtheorem{definition}{Definition}[section]
+\newcommand{\abs}[1]{\ensuremath{\mid #1 \mid}}
+\author{Jan Hendron}
+\date{\today}
+\title{Notes}
+\hypersetup{
+ pdfauthor={Jan Hendron},
+ pdftitle={Notes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+
+
+\section{Week 1: Limit's and Intro to Calculus}
+\label{sec:org251a4c1}
+\subsection{Formal definition of a limit}
+\label{sec:org9af4730}
+\begin{defintion}
+Let \(f\) be a function on an open interval, maps from a set \(D\) to \(\mathbb{R}\)
+
+This function \(f\) has a limit \(b\) if
+
+\begin{align*}
+\forall \epsilon > 0, \exists \delta > 0 \textrm{ such that } 
+\forall x \in D \\
+\textrm{if } 0 < \abs{x - a} < \delta & \textrm{}\\
+\textrm{then } \abs{f(x) - b} < \epsilon \\
+\end{align*}
+\end{defintion}
+
+
+\left\{\begin{array}{lll|l}
+         1 & 1 & 1 & 1 \\
+         0 & 1 & 1 & 1 \\
+         0 & 0 & 1 & 1
+\end{array}
+\right\}
+\end{document}
