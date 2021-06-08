@@ -1,0 +1,6 @@
+b) The process is forced to quit by the terminal. This is because while the space for both the matrices is
+   freed, the space that was allocated for the individual arrays within each matrix was not freed. This leads
+   eventually to there not being any more space on the heap, and the program crashes.
+
+c) In order to fix this problem, after allocating the values, I would free the individual arrays, and then free
+   the matrices before the loop has finished.

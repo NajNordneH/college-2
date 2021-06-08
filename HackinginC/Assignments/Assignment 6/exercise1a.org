@@ -1,0 +1,43 @@
+#+TITLE: Exercise 1a
+#+AUTHOR: Jan Hendron (s1049777)
+
+* Frame 0
+- function_b()
+- 0x7fffffffd930
+- 0x7fffffffd950
+- N / A
+- 0x4800002ee8058b48
+- 0x555555555198
+- 0x4800002e91058b48
+- 0x00007fffffffd940
+- 0x7fffffffd920
+- 0x00007fffffffd940
+- 0x0000000000000000
+- 0x7fffffffd91c
+
+* Frame 1
+- function_a()
+- 0x7fffffffd950
+- 0x7fffffffd960
+- 0x7fffffffd930
+- 0x4800002e91058b48
+- 0x5555555551c4
+- 0x4800002e65058b48
+- 0x00007fffffffd950
+- 0x7fffffffd940
+- 0x00007fffffffd950
+- 0x0000000000000000
+- 0x7fffffffd93c
+
+* Frame 2
+- main()
+- 0x7fffffffd960
+- N / A
+- 0x7fffffffd950
+- 0x4800002e65058b48
+- 0x7ffff7decb25
+- 0x4800017cf4e8c789
+- 0x0000000000000000
+- 0x7fffffffd950
+- 0x0000000000000000
+- N / A

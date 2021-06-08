@@ -1,0 +1,17 @@
+a) prints "0x7ffc0ffeef20", as an array is not a pointer, so where the address of the array is stored, and the
+   address of the 'accessor/name' of the array is the same
+
+b) this prints the address of x added by the size of the types that x stores, so this will print
+   "0x7ffc0ffeef24"
+
+c) this will print the address of x, plus the size in bytes of the total size of the array, which is 4 * 4 =
+   16, which is 0x10 in hex, so the result would be 0x77ffc0ffeef30
+
+d) This will print the value that x points to, and since when we are thinking of arrays, they start at
+   index 0, then this will print x[0] which is 23
+
+e) This will print the value at x[0] + x[2], so this is 23 + 5 which is 28
+
+f) since when we are using pointer arithmetic to address arrays, x is considered the first index of the array
+   so *(x+3) is equivalent to x[3], which is 1 << 7, which is the same as 1 * 2^7, or 128, and the other part
+   of the value is the value at x, or x[0], which is 23, therefore it will print 151

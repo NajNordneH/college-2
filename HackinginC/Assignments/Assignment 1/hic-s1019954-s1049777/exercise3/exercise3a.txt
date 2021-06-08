@@ -1,0 +1,1 @@
+dev/random blocks if the entropy is not indicating sufficient randomness, but dev/urandom never blocks

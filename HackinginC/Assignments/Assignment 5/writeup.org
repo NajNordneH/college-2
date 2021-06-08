@@ -1,0 +1,16 @@
+#+TITLE: Write-up
+#+AUTHOR: Jan Hendron(s1049777)
+
+* Inspection of program
+From doing some testing with adding strings to the program, it is clear that this is a program which prints the arguments passed to it with no format strings
+so just in the form
+#+begin_src c
+int main(int argc, char* argv[]){
+    printf(argv[1]);
+}
+#+end_src
+
+Also, the return address is kept the same, at least on my prompt, and it is about 8 bytes into the stack
+
+After some more testing with the program, it seems to crash after an input of 106 characters, which I found by putting the output of the program into a file, and then
+using the command wc -m to count the amount of characters (-1 for the null byte)

@@ -1,0 +1,45 @@
+address          content (hex)          content(dec)
+----------------------------------------------------------
+0x7ffd10f040de          0x34          52
+0x7ffd10f040df          0x12          18
+0x7ffd10f040dd          0xFFFFFF81    -127
+0x7ffd10f040e0          0xFFFFFFB1    -79
+0x7ffd10f040e1          0x4           4
+0x7ffd10f040e2          0x10          16
+0x7ffd10f040e3          0x0           0
+0x7ffd10f040e4          0x0           0
+0x7ffd10f040e5          0x0           0
+0x7ffd10f040e6          0x0           0
+0x7ffd10f040e7          0x0           0
+0x7ffd10f040e8          0x32          50
+0x7ffd10f040e9          0xFFFFFF90    -112
+0x7ffd10f040ea          0xF           15
+0x7ffd10f040eb          0x0           0
+0x7ffd10f040ec          0x0           0
+0x7ffd10f040ed          0x0           0
+0x7ffd10f040ee          0x0           0
+0x7ffd10f040ef          0x0           0
+0x7ffd10f040f0          0x44          68
+0x7ffd10f040f1          0x33          51
+0x7ffd10f040f2          0x22          34
+0x7ffd10f040f3          0x11          17
+0x7ffd10f040f4          0x11          17
+0x7ffd10f040f5          0x22          34
+0x7ffd10f040f6          0x33          51
+0x7ffd10f040f7          0x44          68
+
+d)
+I believe that the first 2 addresses are i, as there hex values for the bytes are 12 and 34, which match the value that was input to i,
+also, i is a short, which means it has exactly 2 bytes, and this value is also a 2 byte value, so it prints perfectly. Also, due to 
+little-endian architecture, we can see that the least significant bit is in the lower addresses. 
+
+Since we already know what the value of x is, and it is a char, and we are using char pointers in the program, therefore it is very easy
+to see that the 3rd address is for x, as it has the exact value, and since it is a char, will only have 1 1-byte address.
+
+From line 6 - 13, is the addresses for sn1, as it is 8 bytes, which is exactly the size of a long variable
+
+The next 8 lines, line 14 - 21, would then be sn2, for the same reason.
+
+Finally, the last 8 bytes are the addresses for the 2 elements of the array y. This can be seen by the fact that the hex values for the first and 
+last bytes are the same, as due to the fact that both values are the same, just inverted, and also the little-endianness, we see that the most 
+significant bit of the first number is the least significant bit of the other number, and vice versa.

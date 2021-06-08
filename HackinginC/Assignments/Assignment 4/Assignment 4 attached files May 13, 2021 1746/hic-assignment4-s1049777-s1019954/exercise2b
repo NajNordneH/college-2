@@ -1,0 +1,12 @@
+My input into the program to get it to print 'You're root!' is
+
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+During my first tests with the program and gdb, I first tried to overflow the buffer with A's,
+and then adding 'You're root!' to the end of the sequence. However, I found after further
+analysis that when overflowing the buffer, you then begin to add to the i local variable in the
+program, and once that has gotten to a certain size (in my input, exactly 9 extra 'A's'), it over-
+flows into the ok variable, and once that is greater than 0, the program prints 'You're root!'
+
+In fact, the 'lowest', value that could be put at the end of this character string is 32, which is the
+decimal value of the ASCII character for ' '

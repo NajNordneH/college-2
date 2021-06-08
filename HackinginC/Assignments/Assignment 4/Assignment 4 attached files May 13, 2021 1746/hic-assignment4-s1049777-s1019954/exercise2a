@@ -1,0 +1,6 @@
+The program uses the printf, puts, gets and 2 other functions (sha256 and hash_equals).
+
+From the assmebly, what I can see so far is that the program asks for a password, hashs it, and then
+checks if it is equal to the hash value that the it is looking for
+
+There is a buffer, named buf, which has a buffer size of 20, as well as 2 other local variables, ok, and i

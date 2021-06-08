@@ -1,0 +1,11 @@
+b) The output of my program on my system is always the same, however, I did not expect it to be so, as I am
+   checking if the pointer x is null in my for loop. malloc can sometimes fail, so I expected it to sometimes
+   change how many bytes were allocated.
+
+c) There was no change to the output of my program between malloc and calloc, however, I would expect that
+   there should be, as sometimes the amount of meory that was requested to malloc will overflow, so the
+   function will succeed, but there will be much less memory, so I would have expected there, at some point
+   to have been a difference in the amount of memory that it could allocate
+
+d) If you do not check for malloc failure, then trying to use the pointer leads to undefined behaviour,
+   which will make the program completely useless.

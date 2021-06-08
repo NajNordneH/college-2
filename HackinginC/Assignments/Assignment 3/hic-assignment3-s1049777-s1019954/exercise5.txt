@@ -1,0 +1,14 @@
+b) This is because firstly, C does not allow direct assignment to a whole array, and secondly, when assigning
+   the null terminating byte is not copied with the string, so the string will be pretty much unusable when
+   the assignment is finished
+
+c) We need to allocate 9 bytes, as all strings in C must have the null terminating byte '0'
+
+d) printf() knows to stop printing the string once it reaches this null terminating byte
+
+e) If you use free directly after the heap_attack() function is called, it leads to the data at the memory
+   addresses begin removed, and so there is nothing for either printf() call to do.
+
+   Additionally, if you free calling printf(), it can still lead to a memory leak, as in my implementation,
+   not only is the original 9 bytes overwritten, but so are the next 9 bytes, so if you call free on the
+   original pointer, the other 9 bytes are not freed.
